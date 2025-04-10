@@ -1,0 +1,56 @@
+<am<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website dengan Sidebar</title>
+<link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="wrapper">
+    <aside class="sidebar">
+    <ul>
+    <li><a href="#" onclick="showContent('home')">Home</a></li>
+    <li><a href="#" onclick="showContent('about')">Tentang</a></li>
+    <li><a href="#" onclick="showContent('contact')">Kontak</a></li>
+    <li><a href="#" onclick="showContent('materi')">Materi Ajar</a></li>
+    </ul>
+    </aside>
+    <main class="content">
+    <section id="home" class="content-section">
+    <h1>Selamat datang di halaman Home.</h1>
+    <p>Ini adalah halaman utama yang berisi informasi terkini.</p>
+    <p>Silakan jelajahi menu untuk melihat halaman lainnya.</p>
+    </section>
+    <section id="about" class="content-section" style="display:none;">
+    <h1>Ini adalah halaman Tentang.</h1>
+    <p>Website ini dibuat untuk memberikan informasi berguna.</p>
+    <p>Kami berkomitmen untuk menyajikan konten berkualitas.</p>
+    </section>
+    <section id="contact" class="content-section" style="display:none;">
+    <h1>Ini adalah halaman Kontak.</h1>
+    <p>Silakan hubungi kami melalui email di sitinurhaliza.com.</p>
+    <p>Atau kunjungi kantor kami di alamat yang tersedia.</p>
+    </section>
+    <section id="materi" class="content-section" style="display:none;">
+    <h1>Materi Pembelajaran Web Programming</h1>
+    <p> 1. Materi Semantic HTML</p>
+    <p> 2. Materi CSS</p>
+    <p> 4. Materi Penulisan CSS</p>
+    <p> 5. Materi CSS Modren dan Responsive</p>
+    <p> 6. Materi JavaScript</p>
+    <p> 7. Materi Ajax</p>
+    </section>
+    </main>
+    </div>
+    <footer class="footer">
+    <p>Desain by Siti Nurhaliza Matondang</p>
+    </footer>
+    <script>
+    function showContent(sectionId) {
+    let sections = document.querySelectorAll('.content-section'); sections.forEach(section => section.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+}
+</script>
+</body>
+</html>

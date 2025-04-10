@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      background-image: url('https://i.ibb.co/YhRbT8v/ketupat.png');
+      background-size: 80px;
+      background-repeat: repeat;
+      background-color: #fefcea;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(#689f38, #8bc34a);
+      color: white;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      position: fixed;
+      height: 100vh;
+    }
+
+    .sidebar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .sidebar ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-style: italic;
+      display: block;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #558b2f;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 100%;
+      padding: 40px;
+    }
+
+    header {
+      background-color: #aed581;
+      color: #33691e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      margin-top: auto;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 10px;
+      }
+
+      .sidebar img, .sidebar h2 {
+        display: none;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="icaa.jpg" alt="Foto Profil Ica">
+    <h2>Halo</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tentang.html">Kegiatan</a></li>
+      <li><a href="kontak.html">Kontak saya</a></li>
+      <li><a href="Galeri.html">Galeri</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>👥 Foto Besama Keluarga</h1>
+    </header>
+</p> TIDAK ADA FOTO BERSAMA KELUARGA SOALNYA SAYA ANAK BROKEN HOME:)
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ica.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
